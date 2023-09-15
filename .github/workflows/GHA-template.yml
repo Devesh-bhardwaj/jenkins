@@ -33,4 +33,4 @@ jobs:
         run:  zip -j lambda-zip.zip ./lambda_function.py
       
       - name: update_code
-        run: aws lambda update-function-code --function-name= test-lambda --zip-file=fileb://lambda-zip.zip
+        run: aws lambda update-function-code --function-name=test-lambda --zip-file=fileb://lambda-zip.zip
