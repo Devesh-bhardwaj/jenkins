@@ -28,7 +28,8 @@ jobs:
 
       - name: Print assumed role
         run: aws sts get-caller-identity
-            - name: deploy
+        
+      - name: deploy
         run:  zip -j lambda-zip.zip ./lambda_function.py
       
       - name: update_code
